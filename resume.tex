@@ -1,0 +1,279 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+% \usepackage[a4paper, total={6.5in, 9.5in}]{geometry}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingg}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Aarush Bhat} \\ \vspace{8pt}
+    % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
+    \small 
+    \href{mailto:hey@sloorush.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{hey@sloorush.com}} ~ 
+    \href{https://sloorush.com}{\raisebox{-0.2\height}\faLink\   \underline{sloorush.com}} ~
+    \href{tel://+919977955466}{\raisebox{-0.2\height}\faPhone\   \underline{+91 9977955466}} ~
+    \href{https://linkedin.com/in/aarush-bhat/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/aarush-bhat}}  ~
+    \href{https://github.com/sloorush}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/sloorush}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology, Vellore}{Jul 2019 -- Apr 2023 (Expected)}
+      {B.Tech in Computer Science and Engineering}{8.29, CGPA}
+  \resumeSubHeadingListEnd
+
+
+%-----------Certification-----------
+% \section{Certifications}
+%   \resumeSubHeadingListStart
+%     \resumeSubheadingg
+%       {Certified Kubernetes Administrator, Linux Foundation}{Jul 2022}
+%   \resumeSubHeadingListEnd
+  
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     \resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+ \resumeSubheadingg
+      {\href{https://summerofcode.withgoogle.com/}{Google Summer of Code}}{May 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{Student Mentee at \underline{\href{https://www.github.com/haskell}{Haskell Foundation}}. (Haskell, Compiler Design, Language server, LSP)}
+        \resumeItem{Enabling features like Folding Ranges, Semantic Highlighting Etc. for the Haskell Language Server.}
+    \resumeItemListEnd
+%     \vspace{-10pt}
+
+    \resumeSubheadingg
+      {\href{https://www.summerofbitcoin.org/}{Summer of Bitcoin}}{Aug 2021 -- Sept 2021}
+      \resumeItemListStart
+        \resumeItem{Open source Mentee at \underline{\href{https://www.github.com/utreexo}{MIT-DCI utreexo}} under the mentorship of Calvin Kim and Tadge Dryja. (GoLang, Bitcoin)}
+        \resumeItem{Authored support for signet and other significant improvements to help scale bitcoin.}
+    \resumeItemListEnd
+
+  \resumeSubheadingg
+      {\href{https://twitter.com/thetaskapp}{MSquare Labs}}{May 2021 -- Jul 2021}
+      \resumeItemListStart
+        \resumeItem{Full stack developer at The Tasks App. (TypeScript, React, SSG, Apple Design System)}
+        \resumeItem{Worked with the Design team to create the website and blog for The Task App.}
+    \resumeItemListEnd
+
+    \resumeSubheadingg
+      {\href{https://byteavenue.org}{Byte Avenue}}{Mar 2020 -- Dec 2020}
+      \resumeItemListStart
+        \resumeItem{SDE Intern, part of the Frontend Team. (JavaScript, React, Redux, Material UI)}
+        \resumeItem{Member of the founding team and worked on the initial iterations of the coding platform.}
+    \resumeItemListEnd
+    
+    \resumeSubheadingg
+      {\href{https://byteavenue.org}{CodePark}}{Sept 2019 -- Mar 2020}
+      \resumeItemListStart
+        \resumeItem{Frontend Developer. (Javascript, React, SCSS)}
+        \resumeItem{Worked on the web platform and internal tools and managed marketing campaigns.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/EnchanteHQ/}{Enchante \faGithub}} $|$ \emph{TypeScript, MongoDB, Augmented reality, OAuth, Azure}}{Jul 2021}
+          \resumeItemListStart
+            \resumeItem{Enchanté is an attempt to reinvent the traditional transaction system and taking contactless payment to a whole new level by adopting bleeding-edge technology such as Augmented reality and nearby payments within eyesight.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/sloorush/ebpf-keylogger}{eBPF Keylogger \faGithub}} $|$ \emph{Python, C, eBPF, Linux}}{Nov 2021}
+          \resumeItemListStart
+            \resumeItem{Utilizes the power of eBPF to build a keylogger that can be used for monitoring or logging}
+            \resumeItem{Built using BCC toolkit to enable creating efficient kernel tracing and manipulation programs.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{\href{https://github.com/DarthBenro008/greencredus}{GreenCredUs \faGithub}} $|$ \emph{JavaScript, Blockchain, Sustainability}}{Feb 2021}
+          \resumeItemListStart
+            \resumeItem{A carbon credit system implemented on general public to help save the environment.}
+            \resumeItem{Implements cryptocurrency built on the Tezos network and an app built over React.js.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%
+%-----------SKILLS AND INTERESTS-----------
+\section{Skills and Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{ : JavaScript, TypeScript, Haskell, GoLang, C++, Python, Bash} \\
+     \textbf{Databases}{: MongoDB, SQL, Redis} \\
+     \textbf{DevOps}{:  AWS, Azure, Docker, Github Actions, Kubernetes} \\
+     \textbf{Design}{: Figma, Adobe Lightroom} \\
+     \textbf{Blockchain}{: Bitcoin, Ethereum} \\
+     \textbf{Languages}{: English, Hindi, French, Kashmiri} \\
+     \textbf{Interests}{: Formula 1, Music, Business}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------LEADERSHIP---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheadingg{{\href{https://ieeevit.org}{IEEE-VIT}}}{Dec 2019 -- Present}
+            \resumeItemListStart
+                \resumeItem{Technical Head at IEEE-VIT, one of the most active Technical Student bodies representing the IEEE organisation as a chapter on the Vellore Institute Of Technology campus.}
+                \resumeItem{Responsible for Technical growth of 70+ members in the organisation inculcating and promoting the Open Source Software culture and good development practices.}
+                \resumeItem{Developed software for events and projects used by 15000+ participants in 100+ countries for multiple events.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------Achievements-----------
+\section{Achievements}
+     \resumeItemListStart
+        \resumeItem{Won MIT Bitcoin Hack (Cambridge, May 2022), DevSoc (Vellore, April 2021), DevSpace (Vellore, March 2021), and KUHackfest (Kathmandu, Feb 2021).}
+\vspace{-6pt}
+        \resumeItem{Mentor, \underline{\href{https://www.youtube.com/watch?v=9VDt1iRoiFY}{Speaker}} and Judge at Sparkathon 2021 - A 4-day Hackathon by NMIMS, Navi Mumbai.}
+        \vspace{-6pt}
+   		\resumeItem{Awarded Distinction in Trinity College London in Rock and Pop Guitar Grade 2(Nov 2016), Trinity College London Rock and Pop Guitar Initial Grade(Nov 2015)}
+        \vspace{-6pt}
+        \resumeItem{Awarded the CBSE Certificate of Merit for outstanding performance in SSC Examination.}
+   \resumeItemListEnd
+
+\end{document}
