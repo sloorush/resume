@@ -2,9 +2,9 @@
 
 Resume of Aarush Bhat
 
-## Suggestions
+## Suggestions/Review
 
-Please feel free to make an issue if you wish to give suggestions on the resume.
+Please feel free to make an issue if you wish to give suggestions or review the resume.
 
 ## Contact me!
 
