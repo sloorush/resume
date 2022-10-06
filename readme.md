@@ -1,6 +1,8 @@
 # resume-tex
 
-Resume of Aarush Bhat
+Resume of Aarush Bhat:
+
+Download updated version here: [resume](https://github.com/Siddhant-Ray/resume/releases/download/release/resume.pdf)
 
 ## Suggestions/Review
 
