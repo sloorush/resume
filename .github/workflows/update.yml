@@ -1,8 +1,8 @@
 name: Build LaTeX document
-on: 
+on:
   push:
     branches:
-      - main
+      - push-to-files
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -15,7 +15,19 @@ jobs:
           run: |
             tlmgr update --self && tlmgr update --all
             apk add make
-            make all 
+            make all
+      - name: Push to files
+        run: |
+          git config --global user.email "aarush.bhatt@gmail.com"
+          git config --global user.name "Aarush Bhat"
+          git clone https://sloorush:${{ secrets.ACCESS_TOKEN }}@github.com/sloorush/sloorush.github.io.git target
+          mv resume.pdf ./target
+          cd ./target
+          git branch testing-resume-action
+          git checkout testing-resume-action
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Automatic updation of resume from github.com/sloorush/resume"
+          git push origin testing-resume-action
       - name: Delete placeholder release
         uses: actions/github-script@v6
         continue-on-error: true # in case there's no existing release
@@ -41,4 +53,3 @@ jobs:
             resume.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            
