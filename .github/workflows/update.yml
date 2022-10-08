@@ -2,7 +2,7 @@ name: Build LaTeX document
 on:
   push:
     branches:
-      - push-to-files
+      - main
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -23,11 +23,9 @@ jobs:
           git clone https://sloorush:${{ secrets.ACCESS_TOKEN }}@github.com/sloorush/sloorush.github.io.git target
           mv resume.pdf ./target
           cd ./target
-          git branch testing-resume-action
-          git checkout testing-resume-action
           git add .
           git diff-index --quiet HEAD || git commit -m "Automatic updation of resume from github.com/sloorush/resume"
-          git push origin testing-resume-action
+          git push origin master
       - name: Delete placeholder release
         uses: actions/github-script@v6
         continue-on-error: true # in case there's no existing release
